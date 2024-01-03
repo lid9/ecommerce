@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 import { Category } from '../../../payload/payload-types'
 
-import classes from './index.modules.scss'
+import classes from './index.module.scss'
 import CategoryCard from './CategoryCard'
 
 const Categories = ({ categories }: { categories: Category[] }) => {

@@ -82,7 +82,7 @@ export const CartPage: React.FC<{
                       const metaImage = meta?.image
 
                       return (
-                        <CartItem 
+                        <CartItem
                           product={product}
                           title={title}
                           metaImage={metaImage}
@@ -95,7 +95,7 @@ export const CartPage: React.FC<{
                   })}
                 </ul>
               </div>
-              
+
               <div className={classes.summary}>
                 <div className={classes.row}>
                   <h6 className={classes.cartTotal}>Summary</h6>

@@ -39,8 +39,8 @@ export type Props = {
 }
 
 export const CollectionArchive: React.FC<Props> = props => {
-  const { categoryFilters, sort } = useFilter();
-  
+  const { categoryFilters, sort } = useFilter()
+
   const {
     className,
     limit = 10,
@@ -181,7 +181,7 @@ export const CollectionArchive: React.FC<Props> = props => {
 
         <div className={classes.grid}>
           {results.docs?.map((result, index) => {
-            return <Card doc={result} relationTo={relationTo}showCategories />
+            return <Card doc={result} relationTo={relationTo} showCategories />
           })}
         </div>
 

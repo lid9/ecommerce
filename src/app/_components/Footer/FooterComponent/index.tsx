@@ -14,7 +14,7 @@ import { Button } from '../../Button'
 
 const FooterComponent = ({ footer }: { footer: Footer }) => {
   const pathname = usePathname()
-  const navItems = footer?.navItems || [];
+  const navItems = footer?.navItems || []
 
   return (
     <footer className={noHeaderFooterUrls.includes(pathname) ? classes.hide : ''}>
@@ -22,7 +22,7 @@ const FooterComponent = ({ footer }: { footer: Footer }) => {
         <ul className={classes.inclusions}>
           {inclusions.map(inclusion => (
             <li key={inclusion.title}>
-              <Image 
+              <Image
                 src={inclusion.icon}
                 alt={inclusion.title}
                 width={36}
@@ -58,7 +58,7 @@ const FooterComponent = ({ footer }: { footer: Footer }) => {
                     newTab={true}
                     className={classes.socialLinkItem}
                   >
-                    <Image 
+                    <Image
                       src={icon?.url}
                       alt={item.link.label}
                       width={24}

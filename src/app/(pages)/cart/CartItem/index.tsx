@@ -38,7 +38,7 @@ const CartItem = ({ product, title, metaImage, qty, addItemToCart }) => {
     <li className={classes.item} key={title}>
       <Link href={`/products/${product.slug}`} className={classes.mediaWrapper}>
         {!metaImage && <span>No image</span>}
-        {metaImage && typeof metaImage !==  'string' && (
+        {metaImage && typeof metaImage !== 'string' && (
           <Media className={classes.media} imgClassName={classes.image} resource={metaImage} fill />
         )}
       </Link>
@@ -51,7 +51,7 @@ const CartItem = ({ product, title, metaImage, qty, addItemToCart }) => {
 
         <div className={classes.quantity}>
           <div className={classes.quantityBtn} onClick={decrementQty}>
-            <Image 
+            <Image
               src="/assets/icons/minus.svg"
               alt="minus"
               width={24}
@@ -60,7 +60,7 @@ const CartItem = ({ product, title, metaImage, qty, addItemToCart }) => {
             />
           </div>
 
-          <input 
+          <input
             type="text"
             className={classes.quantityInput}
             value={quantity}
@@ -68,7 +68,7 @@ const CartItem = ({ product, title, metaImage, qty, addItemToCart }) => {
           />
 
           <div className={classes.quantityBtn} onClick={incrementQty}>
-            <Image 
+            <Image
               src="/assets/icons/plus.svg"
               alt="plus"
               width={24}

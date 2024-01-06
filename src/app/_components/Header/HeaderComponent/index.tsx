@@ -16,7 +16,7 @@ const HeaderComponent = ({ header }: { header: Header }) => {
   const pathname = usePathname()
 
   return (
-    <nav 
+    <nav
       className={[classes.header, noHeaderFooterUrls.includes(pathname) && classes.hide]
         .filter(Boolean)
         .join(' ')}
